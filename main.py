@@ -13,7 +13,6 @@ Example:
 def add_numbers(a, b):
     sum = a + b
     return sum
-    pass
 
 
 # Exercise 2: Subtract Numbers
@@ -27,7 +26,6 @@ Example:
 def subtract_numbers(a, b):
     diff = a - b
     return diff
-    pass
 
 
 # Exercise 3: FruitLoop
@@ -47,11 +45,10 @@ Example:
 """
 def fruitloop(n):
     for num in n:
-        if num == n*3 and num < n:
-            print("Fruit")
-        if num == n*5 and num < n:
-            print("Loop")
-    pass
+        if num**3 and num < n:
+            return print("Fruit")
+        if num**5 and num < n:
+            return print("Loop")
 
 
 # Exercise 4: Fibonacci
@@ -75,12 +72,8 @@ Example:
     find_max([-1,-5,-3]) -> -1
 """
 def find_max(numbers: list):
-    for num in numbers:
-        if num > numbers:
-            return num
-
-    pass
-
+    print(max.numbers)
+    
 
 # Exercise 6: Find Minimum
 """
@@ -92,9 +85,8 @@ Example:
 """
 def find_min(numbers: list):
     for num in numbers:
-        if num < numbers:
-            return num
-    pass
+        return min(num)
+    
 
 
 # Exercise 7: Person Class
@@ -119,7 +111,7 @@ class Person:
         pass
 
     def greet(self):
-        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+        return print(f"Hello, my name is {self.name} and I am {self.age} years old.")
         pass
 
 
@@ -129,15 +121,15 @@ class Person:
 # Example usage (can be removed or commented out during testing)
 # This part is just for demonstration and won't be executed during tests.
 # Remove docstrings to see how the functions and class work.
-"""
+
 if __name__ == "__main__":
-    # Example usage (can be removed or commented out during testing)
+    #Example usage (can be removed or commented out during testing)
     print(add_numbers(2, 3))  # Should print 5
     print(subtract_numbers(5, 3))  # Should print 2
-    fruitloop(15)  # Should print numbers and words as per the rules
-    print(fibonacci(10))  # Should print 55
+    print(fruitloop(15))  # Should print numbers and words as per the rules
+    #print(fibonacci(10))  # Should print 55
     print(find_max([1, 2, 3, 4, 5]))  # Should print 5
     print(find_min([1, 2, 3, 4, 5]))  # Should print 1
     p = Person("Alice", 25)
     print(p.greet())  # Should print greeting message
-"""
+
