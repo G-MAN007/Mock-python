@@ -11,6 +11,8 @@ Example:
     add_numbers(-1, 4) -> 3
 """
 def add_numbers(a, b):
+    sum = a + b
+    return sum
     pass
 
 
@@ -23,6 +25,8 @@ Example:
     subtract_numbers(3, 5) -> -2
 """
 def subtract_numbers(a, b):
+    diff = a - b
+    return diff
     pass
 
 
@@ -42,6 +46,11 @@ Example:
     Loop
 """
 def fruitloop(n):
+    for num in n:
+        if num == n*3 and num < n:
+            print("Fruit")
+        if num == n*5 and num < n:
+            print("Loop")
     pass
 
 
@@ -66,6 +75,10 @@ Example:
     find_max([-1,-5,-3]) -> -1
 """
 def find_max(numbers: list):
+    for num in numbers:
+        if num > numbers:
+            return num
+
     pass
 
 
@@ -78,6 +91,9 @@ Example:
     find_min([-1,-5,-3]) -> -5
 """
 def find_min(numbers: list):
+    for num in numbers:
+        if num < numbers:
+            return num
     pass
 
 
@@ -98,9 +114,12 @@ Example:
 """
 class Person:
     def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
         pass
 
     def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
         pass
 
 
