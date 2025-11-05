@@ -72,7 +72,7 @@ Example:
     find_max([-1,-5,-3]) -> -1
 """
 def find_max(numbers: list):
-    print(max.numbers)
+    return print(max(numbers))
     
 
 # Exercise 6: Find Minimum
@@ -84,8 +84,7 @@ Example:
     find_min([-1,-5,-3]) -> -5
 """
 def find_min(numbers: list):
-    for num in numbers:
-        return min(num)
+    return print(min(numbers))
     
 
 
@@ -127,7 +126,7 @@ if __name__ == "__main__":
     print(add_numbers(2, 3))  # Should print 5
     print(subtract_numbers(5, 3))  # Should print 2
     print(fruitloop(15))  # Should print numbers and words as per the rules
-    #print(fibonacci(10))  # Should print 55
+    print(fibonacci(10))  # Should print 55
     print(find_max([1, 2, 3, 4, 5]))  # Should print 5
     print(find_min([1, 2, 3, 4, 5]))  # Should print 1
     p = Person("Alice", 25)
